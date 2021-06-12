@@ -1,0 +1,73 @@
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+
+            <div class="div2">
+                <div>
+                    <h1 class="heading">Simple Interest Calculator</h1>
+                </div>
+
+                <div class="row">
+                    <div class="column" >
+                      
+                    </div>
+                    <div class="column" ><b> Amount:</b>
+                        <br><input type="number"  id="principal">  <br/><br>
+                        <b>Rate:</b>
+                         <br><div class="slidecontainer">
+                            <input type="range" min="0" max="20" value="4"   class="slider" id="myRange"> 
+                            <span id="demo"></span>%
+                          </div>                          
+                          <script>
+                              var slider = document.getElementById("myRange");
+                              var output = document.getElementById("demo");
+                              output.innerHTML = slider.value;
+                              
+                              slider.oninput = function() {
+                                  output.innerHTML = this.value;
+                                }
+                            </script>
+                            
+                          <br/>
+                        <b>No. of Years:</b>  <br><select id="year">
+                            <option> 1 </option>  
+                            <option> 2 </option>  
+                            <option> 3 </option>  
+                            <option> 4 </option>  
+                            <option> 5 </option>  
+                            <option> 6 </option>  
+                            <option> 7 </option>  
+                            <option> 8 </option>  
+                            <option> 9 </option>  
+                            <option> 10 </option>  
+                            <option> 11 </option>  
+                            <option> 12 </option>  
+                        </select>  <br/>
+                        <br>
+                        
+                   <button onclick="return compute()">Compute Interest</button>
+                   <span id="answer"></span>
+                    </div>
+                    <div class="column" >
+                     
+                    </div>
+                  </div>
+                  
+
+
+
+                <div>
+                </div>
+
+                
+ 
+
+            </div>
+
+      
+    </body>
+</html>

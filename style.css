@@ -1,0 +1,38 @@
+
+body{
+background-color: black;
+}
+.div2{
+    background-color: white;
+    
+    padding: 3%;
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 25px;
+
+    
+}
+
+
+
+.heading{
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    color: grey;
+    font-size: 50px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
